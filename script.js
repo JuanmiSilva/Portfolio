@@ -4,7 +4,7 @@ const T = {
         n_path: "Trayectoria",
         n_proj: "Proyectos",
         n_contact: "Contacto",
-        h_title: "Hola, soy Juanmi. Desarrollo para la web.",
+        h_title: "Hola, soy Juanmi. Desarrollo aplicaciones web, móviles y de escritorio.",
         h_text:
             "Desarrollador junior de Benacazón (Sevilla) con base sólida en PHP y programación orientada a objetos. Técnico superior en DAM y ahora cursando DAW.",
         h_cta1: "Ver proyectos",
@@ -56,7 +56,7 @@ const T = {
         n_path: "Experience",
         n_proj: "Projects",
         n_contact: "Contact",
-        h_title: "Hi, I'm Juanmi. I build for the web.",
+        h_title: "Hi, I'm Juanmi. I build apps for the web, phones and desktop.",
         h_text:
             "Junior developer from Benacazón (Seville) with a solid base in PHP and object-oriented programming. Higher technician in cross-platform development (DAM), now studying web development (DAW).",
         h_cta1: "See projects",
