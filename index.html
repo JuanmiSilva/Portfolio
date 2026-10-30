@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juanmi · Desarrollador web</title>
+    <meta
+      name="description"
+      content="Portfolio de Juan Miguel Silva Martín, desarrollador junior (DAM y DAW) en Sevilla. PHP, MySQL, JavaScript, Java y Kotlin."
+    />
+    <meta property="og:title" content="Juanmi · Desarrollador web" />
+    <meta
+      property="og:description"
+      content="Portfolio y CV online de desarrollador web (Sevilla)."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔷</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Public+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <a class="logo" href="#inicio">Juanmi</a>
+        <nav aria-label="Principal">
+          <a href="#sobre" data-i="n_about"></a>
+          <a href="#trayectoria" data-i="n_path"></a>
+          <a href="#proyectos" data-i="n_proj"></a>
+          <a href="#contacto" data-i="n_contact"></a>
+        </nav>
+        <div class="tools">
+          <button
+            id="lang"
+            type="button"
+            aria-label="Cambiar idioma / Change language"
+          >
+            EN
+          </button>
+          <button
+            id="theme"
+            type="button"
+            aria-label="Cambiar tema / Toggle theme"
+          >
+            ◐
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="strip tiles" aria-hidden="true"></div>
+
+    <main id="inicio">
+      <div class="wrap hero">
+        <div>
+          <h1 data-i="h_title"></h1>
+          <p data-i="h_text"></p>
+          <div class="btns">
+            <a class="btn main" href="#proyectos" data-i="h_cta1"></a>
+            <a class="btn alt" href="#contacto" data-i="h_cta2"></a>
+          </div>
+        </div>
+        <img
+          class="panel"
+          src="img/fotoCurriculum.png"
+          alt="Foto de Juan Miguel Silva"
+        />
+      </div>
+
+      <section id="sobre">
+        <div class="wrap two">
+          <div>
+            <h2 data-i="a_title"></h2>
+            <p data-i="a_text"></p>
+          </div>
+          <div>
+            <h2 data-i="s_title"></h2>
+            <ul class="chips">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>POO</li>
+              <li>MySQL</li>
+              <li>Java</li>
+              <li>Kotlin</li>
+              <li>C#</li>
+              <li>Python</li>
+              <li>Git</li>
+              <li>Electron</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="trayectoria">
+        <div class="wrap">
+          <h2 data-i="t_title"></h2>
+          <ol class="timeline">
+            <li>
+              <span class="when" data-i="t1_when"></span>
+              <h3 data-i="t1_h"></h3>
+              <div>IES Sotero Hernández, Sevilla</div>
+            </li>
+            <li>
+              <span class="when" data-i="t2_when"></span>
+              <h3 data-i="t2_h"></h3>
+              <div>Konecta BTO</div>
+              <div data-i="t2_d"></div>
+            </li>
+            <li>
+              <span class="when" data-i="t3_when"></span>
+              <h3 data-i="t3_h"></h3>
+              <div>IES El Majuelo, Sevilla</div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="proyectos">
+        <div class="wrap">
+          <h2 data-i="p_title"></h2>
+          <div class="filters" role="group" aria-label="Filtros">
+            <button
+              type="button"
+              data-f="all"
+              aria-pressed="true"
+              data-i="f_all"
+            ></button>
+            <button type="button" data-f="web" aria-pressed="false">Web</button>
+            <button type="button" data-f="mobile" aria-pressed="false">
+              Android
+            </button>
+            <button type="button" data-f="desktop" aria-pressed="false">
+              Desktop
+            </button>
+          </div>
+          <div class="grid">
+            <article class="card" data-cat="desktop mobile">
+              <h3>Read &amp; Sound</h3>
+              <p data-i="p1_d"></p>
+              <div class="tags">Electron · Android · EPUB</div>
+            </article>
+            <article class="card" data-cat="desktop">
+              <h3 data-i="p2_h"></h3>
+              <p data-i="p2_d"></p>
+              <div class="tags">Java · MySQL · Git</div>
+            </article>
+            <article class="card" data-cat="web">
+              <h3 data-i="p3_h"></h3>
+              <p data-i="p3_d"></p>
+              <div class="tags">PHP · MySQL · HTML · CSS</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="idiomas">
+        <div class="wrap two">
+          <div>
+            <h2 data-i="l_title"></h2>
+            <ul class="langs">
+              <li><span data-i="l_es"></span><span data-i="l_es_lv"></span></li>
+              <li><span data-i="l_en"></span><span>B2</span></li>
+              <li><span data-i="l_fr"></span><span data-i="l_fr_lv"></span></li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-i="i_title"></h2>
+            <ul class="chips">
+              <li data-i="i1"></li>
+              <li data-i="i2"></li>
+              <li data-i="i3"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact">
+        <div class="wrap">
+          <h2 data-i="c_title"></h2>
+          <dl>
+            <dt data-i="c_mail"></dt>
+            <dd>
+              <a href="mailto:juanmisilmar@gmail.com">juanmisilmar@gmail.com</a>
+            </dd>
+            <dt data-i="c_tel"></dt>
+            <dd><a href="tel:+34652614364">652 61 43 64</a></dd>
+            <dt data-i="c_loc"></dt>
+            <dd>Benacazón, Sevilla</dd>
+          </dl>
+          <ul class="chips" style="margin-bottom: 24px">
+            <li data-i="c_lic"></li>
+            <li data-i="c_car"></li>
+            <li data-i="c_trav"></li>
+          </ul>
+          <div class="btns">
+            <a
+              class="btn main"
+              href="mailto:juanmisilmar@gmail.com"
+              data-i="c_btn"
+            ></a>
+            <a
+              class="btn alt"
+              href="CV_juanmi_europass.pdf"
+              download
+              data-i="c_cv"
+            ></a>
+            <a
+              class="btn alt"
+              href="https://www.linkedin.com/in/juanmi-silva-766845293"
+              target="_blank"
+              rel="noopener"
+              data-i="c_li"
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        © 2026 Juan Miguel Silva Martín · <span data-i="foot"></span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
