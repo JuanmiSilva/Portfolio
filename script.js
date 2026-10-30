@@ -159,3 +159,24 @@ document.querySelectorAll(".filters button").forEach(
         });
     }),
 );
+
+// DESCARGAR CVV
+const cvLink = document.getElementById("cv-link");
+
+const cvFiles = {
+    es: "Currículum Juanmi.pdf",
+    en: "CVV Juanmi English.pdf",
+};
+
+function updateCvLink() {
+    const lang = document.documentElement.lang.startsWith("en") ? "en" : "es";
+    cvLink.href = encodeURI(cvFiles[lang]);
+    cvLink.setAttribute("download", cvFiles[lang]);
+}
+
+// Se actualiza al cargar y cada vez que cambie el atributo lang de <html>
+updateCvLink();
+new MutationObserver(updateCvLink).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["lang"],
+});
